@@ -1,0 +1,30 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/class">
+    p{
+        border: 1px soid black;
+    }
+    </style>
+</head>
+<body>
+    <p id="para1">javascript</p>
+    <p id="para2">python</p>
+    <button id="btn">click to swap</button>
+    <script type="text/javascript">
+    document.getElementById('btn').addEventListener('click',function(){
+     p1=document.getElementById('para1');
+     p2=document.getElementById('para2');
+     p1content=p1.innerText;
+     p2content=p2.innerText;
+     p1.innerText=p2content;
+     p2.innerText=p1content;
+     p1content=p2content;
+    });
+     
+    </script>
+</body>
+</html>
